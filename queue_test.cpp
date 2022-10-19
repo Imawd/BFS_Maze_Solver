@@ -1,17 +1,3 @@
-/* 
-This file is complete, you don't need to change anything
-
-queue_test.cpp
-Author: CS 103 Course Staff
-Description: Tests whether the Queue class is working.
-Expected output:
-true
-false
-3 1
-2 2
-true
-*/
-
 #include "queue.h"
 #include <iostream>
 using namespace std;
