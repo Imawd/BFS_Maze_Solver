@@ -1,7 +1,3 @@
-/* 
-mazeio.cpp
-*/
-
 #include <iostream>
 #include <fstream>
 #include "mazeio.h"
@@ -31,8 +27,6 @@ using namespace std;
  *************************************************/
 char** read_maze(char* filename, int* rows, int* cols) 
 {
-	
-   // *** You complete **** CHECKPOINT 1
    ifstream ifile(filename);
 
    ifile >> *rows >> *cols;
@@ -68,8 +62,6 @@ char** read_maze(char* filename, int* rows, int* cols)
  *************************************************/
 void print_maze(char** maze, int rows, int cols) 
 {
-	
-   // *** You complete **** CHECKPOINT 1
 
    cout << rows << " " << cols << endl;
    
