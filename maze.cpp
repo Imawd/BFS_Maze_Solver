@@ -1,7 +1,3 @@
-/* 
-maze.cpp
-*/
-
 #include <iostream>
 #include "mazeio.h"
 #include "queue.h"
@@ -40,14 +36,11 @@ int main(int argc, char* argv[]) {
       cout << "Error, input format incorrect." << endl;
       return 1;
    }
-	 //================================
-   // When working on Checkpoint 4, you will call maze_search here.
-   // But for Checkpoint 1, just assume we found the path.
+	 
   
-   result = maze_search(mymaze, rows, cols); // <--- TASK: CHANGE THIS FOR CHECKPOINT 4
+   result = maze_search(mymaze, rows, cols); 
 	
 	
-   // examine value returned by maze_search and print appropriate output
    if (result == 1) { // path found!
       print_maze(mymaze, rows, cols);
    }
@@ -58,10 +51,7 @@ int main(int argc, char* argv[]) {
       cout << "Invalid maze." << endl;
    }
 
-	 //================================
-   // ADD CODE BELOW
-   // to delete all memory that read_maze allocated: CHECKPOINT 2
-
+   
    for (int i = 0; i < rows; i++)
    {
       delete[] mymaze[i];
@@ -80,11 +70,9 @@ int main(int argc, char* argv[]) {
  *
  * If path is found fill it in with '*' characters
  *  but don't overwrite the 'S' and 'F' cells
- * NOTE: don't forget to deallocate memory in here too!
  *************************************************/
 int maze_search(char** maze, int rows, int cols) 
 {
-  // *** You complete **** CHECKPOINT 4
   int s_count = 0;
   int f_count = 0;
   Location s_location;
